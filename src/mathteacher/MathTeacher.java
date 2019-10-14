@@ -42,7 +42,8 @@ public class MathTeacher {
     
     // Method to check if user inputs is an Int
     public static int isNumber(int num){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan;
+        scan = new Scanner(System.in);
         boolean isNum;
         do {                
                 if (scan.hasNextInt()) {
