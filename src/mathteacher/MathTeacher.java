@@ -40,6 +40,13 @@ public class MathTeacher {
         return n1 / n2;
     }
     
+    public static void printMenu(){
+        System.out.println("Enter 1 to add the two numbers.");
+        System.out.println("Enter 2 to subtract the second number from the first number.");
+        System.out.println("Enter 3 to multiply the two numbers.");
+        System.out.println("Enter 4 to divide the first number by the second number.");
+    }
+    
     // Method to check if user inputs is an Int
     public static int isNumber(int num){
         Scanner scan;
@@ -63,8 +70,8 @@ public class MathTeacher {
     
     public static void main(String[] args) {
         // boolean to keep prgram running
-        boolean run = true;
         Scanner scan = new Scanner(System.in);
+        boolean run = true;
         int firstNum = 0;
         int secondNum = 0;
         int userInput = 0;
@@ -79,10 +86,7 @@ public class MathTeacher {
             firstNum = isNumber(firstNum);
             secondNum = isNumber(secondNum);
             
-            System.out.println("Enter 1 to add the two numbers.");
-            System.out.println("Enter 2 to subtract the second number from the first number.");
-            System.out.println("Enter 3 to multiply the two numbers.");
-            System.out.println("Enter 4 to divide the first number by the second number.");
+            printMenu();
         
             // Input verification, expecting an Int; for userInput for menu selection
             userInput = isNumber(userInput);
